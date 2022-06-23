@@ -32,10 +32,8 @@ def unflatten_dict(diction):
 
 
 
-def treemap(func, in_list):
-    
+def treemap(func, in_list):  
     new_list = in_list
-
     for i in range(0, len(in_list)):
         new_list[i] = func(new_list[i]) if not isinstance(new_list[i], list) else treemap(func, new_list[i])
     return new_list
