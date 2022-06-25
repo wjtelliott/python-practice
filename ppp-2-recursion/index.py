@@ -6,7 +6,7 @@ def return_to_zero(n):
 
 def return_to_zero_rec(n):
     print('Recursive=>',n);
-    return 0 if n == 0 else return_to_zero_rec(n - 1);
+    return 0 if n <= 0 else return_to_zero_rec(n - 1);
 
 return_to_zero(4);
 return_to_zero_rec(4);
@@ -29,6 +29,7 @@ go_to_n_rec(7);
 
 """
 Write a program that returns the nth elements in the fivonacci sequence
+0 1 1 2 3 5 8 
 """
 
 def fib_rec(n, curr_n = 2, last = 0, now = 0):
